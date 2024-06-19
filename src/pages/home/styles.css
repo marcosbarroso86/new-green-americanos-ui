@@ -99,7 +99,7 @@ body {
   line-height: var(--bs-body-line-height);
   color: var(--bs-body-color);
   text-align: var(--bs-body-text-align);
-  background-color: var(--bs-body-bg);
+  /* background: #110f16; */
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -8091,7 +8091,7 @@ textarea.form-control-lg {
 
 .text-muted {
   --bs-text-opacity: 1;
-  color: #6c757d !important;
+  color: #FFF !important;
 }
 
 .text-black-50 {
@@ -10926,7 +10926,7 @@ hr.divider-light {
   }
 }
 
-header.masthead {
+/* header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
   background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgb(13 13 8 / 44%) 100%), url("https://as1.ftcdn.net/v2/jpg/04/79/06/80/1000_F_479068036_l6iRS7uNMm61dd6Pc4Ac2hTXHP7nE5ca.jpg");
@@ -10934,7 +10934,7 @@ header.masthead {
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
-}
+} */
 header.masthead h1, header.masthead .h1 {
   font-size: 2.25rem;
 }
@@ -10992,4 +10992,133 @@ header.masthead h1, header.masthead .h1 {
 }
 #portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption, #portfolio .container-sm .portfolio-box:hover .portfolio-box-caption, #portfolio .container-md .portfolio-box:hover .portfolio-box-caption, #portfolio .container-lg .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xl .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xxl .portfolio-box:hover .portfolio-box-caption {
   opacity: 1;
+}
+
+._cta {
+  
+  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url("https://padeloide.com/wp-content/uploads/El-Buenos-Aires-Padel-Master-WPT-busca-superar-los-obstaculos-y-asegura-su-realizacion.webp") fixed center center;
+  background-size: cover;
+  padding: 160px 0;
+}
+
+
+._cta h3 {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+._cta p {
+  color: #fff;
+}
+
+._cta .cta-btn {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  text-decoration: none;
+  padding: 8px 28px;
+  border-radius: 4px;
+  transition: 0.5s;
+  margin-top: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+._cta .cta-btn:hover {
+  background: #ffc451;
+  border-color: #ffc451;
+  color: #151515;
+}
+
+.team .member {
+  border: 1px solid rgba(var(--default-color-rgb), 0.1);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.team .member img {
+  border-radius: 50%;
+  max-width: 60%;
+  margin: 30px 0;
+}
+
+.team .member .member-content {
+  padding: 0 20px 30px 20px;
+}
+
+.team .member h4 {
+  font-weight: 700;
+  margin-bottom: 2px;
+  font-size: 18px;
+}
+
+.team .member span {
+  font-style: italic;
+  display: block;
+  font-size: 13px;
+  color: rgba(var(--default-color-rgb), 0.8);
+}
+
+.team .member p {
+  padding-top: 10px;
+  font-size: 14px;
+  font-style: italic;
+  color: rgba(var(--default-color-rgb), 0.6);
+}
+
+.team .member .social {
+  margin-top: 15px;
+}
+
+.team .member .social a {
+  color: rgba(var(--default-color-rgb), 0.4);
+  transition: 0.3s;
+}
+
+.team .member .social a:hover {
+  color: var(--accent-color);
+}
+
+.team .member .social i {
+  font-size: 18px;
+  margin: 0 2px;
+}
+
+section.cta {
+  color: #fff;
+  position: relative;
+  padding: 15rem 0;
+  background-image: url("https://www.shutterstock.com/shutterstock/videos/1103600845/thumb/1.jpg?ip=x480");
+  background-position: center;
+  background-size: cover;
+}
+section.cta .cta-content {
+  
+  position: relative;
+  z-index: 1;
+}
+section.cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.showcase .showcase-text {
+  padding: 3rem;
+}
+.showcase .showcase-img {
+  min-height: 30rem;
+  background-size: cover;
+}
+@media (min-width: 768px) {
+  .showcase .showcase-text {
+    padding: 7rem;
+  }
 }

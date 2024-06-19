@@ -1,17 +1,18 @@
-import React, { useEffect } from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Home from './pages/home/Home';
-import Aos from 'aos';
+import React, { useEffect } from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import Home from "./pages/home/Home";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { RouterProvider } from "react-router-dom";
+import { router } from "./routes";
 
 function App() {
-
   useEffect(() => {
-    Aos.init()
-  }, [])
+    AOS.init();
+  }, []);
 
-
-  return <Home />
+  return <RouterProvider router={router} />;
 }
 
 export default App;

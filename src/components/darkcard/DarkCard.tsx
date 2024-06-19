@@ -4,7 +4,7 @@ import canasto from '../../assets/img/canasto.png'
 
 const DarkCard = () => {
   return (
-        <section className="dark">
+        <section className="dark" id="nosotros">
           <div className="container py-4">
               <h1 className="h1 text-center text-white" id="pageHeaderTitle">NOSOTROS</h1>
 

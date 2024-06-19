@@ -16,7 +16,7 @@ const Home = () => {
       <body id="page-top">
         <Navbar />
         <Header />
-        <section className="dark" data-aos="fade-up">
+        <section className="dark" data-aos="fade-up" id="about">
           <div className="container px-5">
             <div className="row gx-5 align-items-center justify-content-center justify-content-lg-between">
               <div className="col-12 col-lg-5">
@@ -86,16 +86,10 @@ const Home = () => {
                     </p>
                     <div className="social">
                       <a href="">
-                        <i className="bi bi-twitter"></i>
-                      </a>
-                      <a href="">
                         <i className="bi bi-facebook"></i>
                       </a>
                       <a href="">
                         <i className="bi bi-instagram"></i>
-                      </a>
-                      <a href="">
-                        <i className="bi bi-linkedin"></i>
                       </a>
                     </div>
                   </div>
@@ -126,16 +120,10 @@ const Home = () => {
                     </p>
                     <div className="social">
                       <a href="">
-                        <i className="bi bi-twitter"></i>
-                      </a>
-                      <a href="">
                         <i className="bi bi-facebook"></i>
                       </a>
                       <a href="">
                         <i className="bi bi-instagram"></i>
-                      </a>
-                      <a href="">
-                        <i className="bi bi-linkedin"></i>
                       </a>
                     </div>
                   </div>

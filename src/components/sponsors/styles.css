@@ -1,0 +1,30 @@
+.client-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    padding: 20px;
+}
+
+.logo-container {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-container img {
+    cursor: pointer;
+}
+
+.client-logo {
+    max-width: 100%;
+    max-height: 100%;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.client-logo:hover {
+    filter: grayscale(0%);
+}

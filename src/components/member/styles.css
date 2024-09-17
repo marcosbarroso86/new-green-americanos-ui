@@ -1,0 +1,29 @@
+.team-card {
+    position: relative;
+    width: 400px; /* Ajusta el tamaño según necesites */
+    height: 500px; /* Ajusta el tamaño según necesites */
+    overflow: hidden;
+    border-radius: 10px; /* Opcional: para bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Leve elevación */
+    background-color: slategrey;
+  }
+  
+  .team-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .team-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30%; /* Haciendo que el footer ocupe el 30% inferior de la tarjeta */
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }

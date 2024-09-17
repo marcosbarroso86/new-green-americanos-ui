@@ -1,14 +1,13 @@
 import React from "react";
 import "./styles.css";
-import logo from "../../assets/img/logo.png";
 import newGreenLogoCircle from "../../assets/img/new_green_logo_circle.jpeg";
 import Navbar from "../../components/nav/Nav";
 import Header from "../../components/header/Header";
 
-import pabloCuellarImg from "../../assets/img/team/team-1.png";
-import gustavoImg from "../../assets/img/team/team-2.jpg";
-import monasterioImg from "../../assets/img/team/team-3.jpg";
+import pabloCuellarImg from "../../assets/img/team/team-2.png";
+import gustavoImg from "../../assets/img/team/gus9.jpeg";
 import DarkCard from "../../components/darkcard/DarkCard";
+import Sponsor from "../../components/sponsors/Sponsor";
 
 const Home = () => {
   return (
@@ -24,10 +23,16 @@ const Home = () => {
                   Quienes somos
                 </h2>
                 <p className="lead fw-normal text-white mb-5 mb-lg-0">
-                  This section is perfect for featuring some information about
-                  your application, why it was built, the problem it solves, or
-                  anything else! There's plenty of space for text here, so don't
-                  worry about writing too much.
+                  Desde el 2014 nos dedicamos a la organización de torneos de
+                  padel, con una amplia trayectoria en torneos americanos y
+                  abiertos, priorizamos que el jugador que asiste a nuestros
+                  torneos se sienta a gusto en cada competición, y elijan volver
+                  a nuestros circuitos. Desde New Green Americanos incluimos
+                  diferentes categorías, desde la más principiante hasta la más
+                  avanzada, para que todos los jugadores de padel puedan
+                  participar, otorgándoles importantes premios en cada
+                  competición. Además, podrán encontrar en nuestro canal de
+                  YouTube las finales de nuestros torneos.
                 </p>
               </div>
               <div className="col-sm-8 col-md-6">
@@ -43,16 +48,9 @@ const Home = () => {
           </div>
         </section>
 
-        <section
-          id="team"
-          className="team section text-white dark"
-        >
+        <section id="team" className="team section text-white dark">
           <div className="container section-title" data-aos="fade-up">
             <h2>Team</h2>
-            <p>
-              Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
-              consectetur velit
-            </p>
           </div>
 
           <div className="container">
@@ -67,9 +65,12 @@ const Home = () => {
                   style={{ background: "#110f16", border: "1px solid white" }}
                 >
                   <img src={pabloCuellarImg} className="img-fluid" alt="" />
-                  <div className="member-content text-white" style={{textAlign: "left"}}>
-                    <h4>Pablo Cuellar</h4>
-                    <span>Profesor de paddle</span>
+                  <div
+                    className="member-content text-white"
+                    style={{ textAlign: "left" }}
+                  >
+                    <h4 style={{ color: "#2ecc71" }}>Pablo Cuellar</h4>
+                    <span>Profesor de padel - Organizador de torneos</span>
                     <p>
                       Me inicie en el padel en el 2013, trabaje como encargado
                       en el club “New Green Padel” de Bella Vista desde 2013
@@ -85,10 +86,7 @@ const Home = () => {
                       Miguel.
                     </p>
                     <div className="social">
-                      <a href="">
-                        <i className="bi bi-facebook"></i>
-                      </a>
-                      <a href="">
+                      <a href="http://www.instagram.com/pablogcuellar">
                         <i className="bi bi-instagram"></i>
                       </a>
                     </div>
@@ -104,9 +102,12 @@ const Home = () => {
                   className="member"
                   style={{ background: "#110f16", border: "1px solid white" }}
                 >
-                  <img src={pabloCuellarImg} className="img-fluid" alt="" />
-                  <div className="member-content text-white" style={{textAlign: "left"}}>
-                    <h4>Gustavo Letieri</h4>
+                  <img src={gustavoImg} className="img-fluid" alt="" />
+                  <div
+                    className="member-content text-white"
+                    style={{ textAlign: "left" }}
+                  >
+                    <h4 style={{ color: "#2ecc71" }}>Gustavo Letieri</h4>
                     <span>Organizador de torneos</span>
                     <p>
                       Me inicie en el padel en el 2004, tuve un club de padel en
@@ -118,14 +119,6 @@ const Home = () => {
                       “New Green Americanos” cumpliendo 10 años en la
                       organización de torneos.
                     </p>
-                    <div className="social">
-                      <a href="">
-                        <i className="bi bi-facebook"></i>
-                      </a>
-                      <a href="">
-                        <i className="bi bi-instagram"></i>
-                      </a>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -135,6 +128,8 @@ const Home = () => {
 
         <DarkCard />
 
+     
+
         {/* jugadores */}
         <section id="cta" className="_cta d-flex">
           <div className="container" data-aos="zoom-in">
@@ -142,16 +137,22 @@ const Home = () => {
               <h3>Nuestro jugadores</h3>
               <p>
                 {" "}
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-                sed dolores est tempore delectus id esse! Deserunt
-                exercitationem quam qui aperiam ipsa doloremque nesciunt magni
-                aut repellat. Voluptate, minima fugiat?
+                En esta sección podrán encontrar a todos los jugadores que
+                asisten al circuito de padel de New Green Americanos.
               </p>
-              <a className="cta-btn" href="/#">
+              <div className="cta cta-btn" >
                 PROXIMAMENTE
-              </a>
+              </div>
             </div>
           </div>
+        </section>
+
+        <section>
+          <div className="container section-title" data-aos="fade-up">
+            <h2>Empresas que confian en nosotros</h2>
+          </div>
+
+          <Sponsor />
         </section>
       </body>
     </>

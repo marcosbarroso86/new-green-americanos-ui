@@ -9,9 +9,9 @@ const Header = () => {
   return (
       <header className="masthead">
           <div className="container px-4 px-lg-5 h-100" style={{zIndex:2 , position: 'relative'}} data-aos="zoom-in">
-            <div className="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+            <div className="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center media_content">
               <div className="col-lg-8 align-self-end" >
-                <img src={logo}/>
+                <img className='img_logo' src={logo}/>
                 {/* <h1 className="text-white font-weight-bold">Your Favorite Place for Free Bootstrap Themes</h1> */}
                 <hr className="divider" />
               </div>

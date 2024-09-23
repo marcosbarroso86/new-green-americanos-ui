@@ -16,26 +16,26 @@ const Sponsor = () => {
        
         <div className="logo-container">
           
-            <img src={homepadel} alt="Cliente 1" className="client-logo img-fluid" />
+            <img src={homepadel} alt="homepadel" className="client-logo img-fluid" width={130} title='Home padel'/>
         </div>
         <div className="logo-container">
           
-            <img src={ayt} alt="Cliente 1" className="client-logo img-fluid" width={150}/>
+            <img src={ayt} alt="ayt" className="client-logo img-fluid" width={130} title='Heladeria AyT'/>
         </div>
         <div className="logo-container">
           
-            <img src={trz} alt="Cliente 1" className="client-logo img-fluid" />
+            <img src={trz} alt="trz" className="client-logo img-fluid" width={160} title='Terrazas bar'/>
         </div>
         <div className="logo-container">
           
-            <img src={cf} alt="Cliente 1" className="client-logo img-fluid" />
+            <img src={cf} alt="cf" className="client-logo img-fluid" width={130} title='CF'/>
         </div>
         <div className="logo-container">
           
-            <img src={ant} alt="Cliente 1" className="client-logo img-fluid" width={125}/>
+            <img src={ant} alt="ant" className="client-logo img-fluid" width={100} title='ANT'/>
         </div> 
         <div className="logo-container">
-            <img src={typ} alt="Cliente 3" className="client-logo img-fluid" />
+            <img src={typ} alt="typ" className="client-logo img-fluid" width={130} title='TyC'/>
         </div>
     </div>
   )

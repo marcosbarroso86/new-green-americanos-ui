@@ -4891,6 +4891,7 @@ textarea.form-control-lg {
 }
 
 @media (min-width: 576px) {
+
   .list-group-horizontal-sm {
     flex-direction: row;
   }
@@ -7314,7 +7315,7 @@ textarea.form-control-lg {
 }
 
 .vh-100 {
-  height: 100vh !important;
+  height: 100dvh !important;
 }
 
 .min-vh-100 {

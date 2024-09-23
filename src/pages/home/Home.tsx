@@ -11,8 +11,8 @@ import Sponsor from "../../components/sponsors/Sponsor";
 
 const Home = () => {
   return (
-    <>
-      <body id="page-top">
+    <div >
+      <div id="page-top">
         <Navbar />
         <Header />
         <section className="dark" data-aos="fade-up" id="about">
@@ -79,7 +79,7 @@ const Home = () => {
                       en la actualidad cumplimos 10 años organizando torneos en
                       diferentes clubes de la zona. En el 2022 comencé a
                       competir en el circuito AJPP, en el mismo año tambien
-                      realice el Profesorado de Padel en PPT Güemes con Jorge
+                      realicé el Profesorado de Padel en PPT Güemes con Jorge
                       Nicolini. En el 2023, me recibí como Instructor de Padel
                       en el club Monasterio con Nito Brea. Actualmente me
                       encuentro dando clases en el Club La Fábrica de San
@@ -154,8 +154,8 @@ const Home = () => {
 
           <Sponsor />
         </section>
-      </body>
-    </>
+      </div>
+    </div>
   );
 };
 

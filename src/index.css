@@ -456,7 +456,7 @@ h6 {
 
 @media (max-width: 991px) {
   #hero {
-    height: 100vh;
+    height: 100dvh;
     text-align: center;
   }
 
@@ -1823,5 +1823,11 @@ section {
 
   #footer .credits {
     padding-top: 4px;
+  }
+}
+
+@media (max-width: 600px) {
+  section {
+    width: 100%
   }
 }

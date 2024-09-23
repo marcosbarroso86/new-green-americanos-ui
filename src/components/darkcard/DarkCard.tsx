@@ -72,7 +72,7 @@ const DarkCard = () => {
 
             <p className="postcard__preview-txt">
               Formato: Es un torneo corto que comienza y termina el mismo día.
-              Tiene como caracterista principal que sus partidos se disputan a
+              Tiene como característica principal que sus partidos se disputan a
               un solo set con punto de oro. Se juega en zonas de 3 a 4 parejas
               donde se enfrentan entre si, terminada esta fase, se prosigue a la
               fase de eliminación (16vos, 8vos, 4tos, semi y la final). En

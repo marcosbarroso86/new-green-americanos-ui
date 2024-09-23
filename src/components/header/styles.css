@@ -23,3 +23,19 @@ video {
     opacity: 0.5;
     mix-blend-mode: overlay;
 }
+
+@media (max-width: 640px) { 
+
+    .media_content {
+        padding-top: 200px;
+    }
+
+    .img_logo {
+        width: 100%;
+    }
+
+    .navbar-toggler {
+        display: none;
+    }
+ }
+

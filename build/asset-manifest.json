@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.83f87d51.css",
-    "main.js": "/static/js/main.92e00f1d.js",
+    "main.css": "/static/css/main.2afdb787.css",
+    "main.js": "/static/js/main.955c1828.js",
     "static/js/787.a7045463.chunk.js": "/static/js/787.a7045463.chunk.js",
     "static/media/new_green_video_intro.mp4": "/static/media/new_green_video_intro.c13c720c4fced12d2da0.mp4",
     "static/media/JonatanCelestino.jpeg": "/static/media/JonatanCelestino.fff2333066668555ecce.jpeg",
@@ -21,6 +21,7 @@
     "static/media/logo.png": "/static/media/logo.0577bc10764f7681c5ae.png",
     "static/media/new_green_logo_circle.jpeg": "/static/media/new_green_logo_circle.10885ebe06b58fcd5ee6.jpeg",
     "static/media/ant.png": "/static/media/ant.8c9925395ea20fc50e51.png",
+    "static/media/typ_alternative.png": "/static/media/typ_alternative.a97f8776ce13cc807b59.png",
     "static/media/bootstrap-icons.woff?": "/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
     "static/media/team-2.png": "/static/media/team-2.7486eb1b6d8e203de755.png",
     "static/media/bootstrap-icons.woff2?": "/static/media/bootstrap-icons.b7bcc075b395c14ce8c2.woff2",
@@ -32,14 +33,13 @@
     "static/media/pelota.png": "/static/media/pelota.8504abcef581d225fd8d.png",
     "static/media/homepadel.png": "/static/media/homepadel.ef5205eb0d6f7b2786b3.png",
     "static/media/icono-de-whatsapp.png": "/static/media/icono-de-whatsapp.ec418daacbe94f720aca.png",
-    "static/media/typ_short.png": "/static/media/typ_short.9f988bda7e93f855032c.png",
     "index.html": "/index.html",
-    "main.83f87d51.css.map": "/static/css/main.83f87d51.css.map",
-    "main.92e00f1d.js.map": "/static/js/main.92e00f1d.js.map",
+    "main.2afdb787.css.map": "/static/css/main.2afdb787.css.map",
+    "main.955c1828.js.map": "/static/js/main.955c1828.js.map",
     "787.a7045463.chunk.js.map": "/static/js/787.a7045463.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.83f87d51.css",
-    "static/js/main.92e00f1d.js"
+    "static/css/main.2afdb787.css",
+    "static/js/main.955c1828.js"
   ]
 }

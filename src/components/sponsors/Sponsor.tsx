@@ -7,7 +7,7 @@ import ayt from '../../assets/img/sponsors/ayt.png'
 import trz from '../../assets/img/sponsors/trz.png'
 import cf from '../../assets/img/sponsors/cf.png'
 import ant from '../../assets/img/sponsors/ant.png'
-import typ from '../../assets/img/sponsors/typ_short.png'
+import typ from '../../assets/img/sponsors/typ_alternative.png'
 
 const Sponsor = () => {
 
@@ -32,10 +32,10 @@ const Sponsor = () => {
         </div>
         <div className="logo-container">
           
-            <img src={ant} alt="ant" className="client-logo img-fluid" width={100} title='ANT'/>
+            <img src={ant} alt="ant" className="client-logo img-fluid" width={80} title='YUKA_ANT'/>
         </div> 
         <div className="logo-container">
-            <img src={typ} alt="typ" className="client-logo img-fluid" width={130} title='TyC'/>
+            <img src={typ} alt="typ" className="client-logo img-fluid" width={140} title='TyC'/>
         </div>
     </div>
   )

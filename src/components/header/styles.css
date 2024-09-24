@@ -24,6 +24,10 @@ video {
     mix-blend-mode: overlay;
 }
 
+.img_logo {
+    width: 90%;
+}
+
 @media (max-width: 640px) { 
 
     .media_content {

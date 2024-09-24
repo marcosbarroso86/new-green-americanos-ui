@@ -20,7 +20,7 @@ const Home = () => {
             <div className="row gx-5 align-items-center justify-content-center justify-content-lg-between">
               <div className="col-12 col-lg-5">
                 <h2 className="display-4 text-white lh-1 mb-4">
-                  Quienes somos
+                  ¿Quienes Somos?
                 </h2>
                 <p className="lead fw-normal text-white mb-5 mb-lg-0">
                   Desde el 2014 nos dedicamos a la organización de torneos de
@@ -134,7 +134,7 @@ const Home = () => {
         <section id="cta" className="_cta d-flex">
           <div className="container" data-aos="zoom-in">
             <div className="text-center justify-content-center align-content-center">
-              <h3>Nuestro jugadores</h3>
+              <h3>Nuestro Jugadores</h3>
               <p>
                 {" "}
                 En esta sección podrán encontrar a todos los jugadores que

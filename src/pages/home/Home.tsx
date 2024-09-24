@@ -134,7 +134,7 @@ const Home = () => {
         <section id="cta" className="_cta d-flex">
           <div className="container" data-aos="zoom-in">
             <div className="text-center justify-content-center align-content-center">
-              <h3>Nuestro Jugadores</h3>
+              <h3>Nuestros Jugadores</h3>
               <p>
                 {" "}
                 En esta sección podrán encontrar a todos los jugadores que

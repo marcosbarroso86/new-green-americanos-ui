@@ -422,6 +422,11 @@ legend {
     font-size: 1.5rem;
   }
 }
+@media (max-width: 973px) {
+  .member_content {
+    padding-bottom: 10px;
+  }
+}
 legend + * {
   clear: left;
 }

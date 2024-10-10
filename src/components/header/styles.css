@@ -28,18 +28,24 @@ video {
     width: 90%;
 }
 
-@media (max-width: 640px) { 
+@media (max-width: 973px) { 
 
-    .media_content {
-        padding-top: 200px;
+    #mainNav {
+        background-color: rgba(0, 0, 0, 0.84);
     }
-
+    header {
+        min-height: auto;
+    }
     .img_logo {
-        width: 100%;
+        width: 50%;
     }
 
-    .navbar-toggler {
-        display: none;
+    video {
+        padding-top: 83px;
+    }
+
+    .masthead {
+        padding-top: 175px;
     }
  }
 

@@ -12,10 +12,9 @@ const Header = () => {
             <div className="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center media_content">
               <div className="col-lg-8 align-self-end" >
                 <img className='img_logo' src={logo} />
-                {/* <h1 className="text-white font-weight-bold">Your Favorite Place for Free Bootstrap Themes</h1> */}
                 <hr className="divider" />
               </div>
-              <div className="col-lg-8 align-self-baseline">
+              <div className="col-lg-8 align-self-baseline social_content">
                 <div className="container px-4 px-lg-5">
                   <ul className="list-inline mb-5 d-flex justify-content-evenly">
                     <li className="list-inline-item">

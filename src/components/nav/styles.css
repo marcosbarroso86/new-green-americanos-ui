@@ -1,0 +1,27 @@
+@media (max-width: 973px) { 
+    .menu {
+        height: 150px;
+        width: 100%;
+        color: white;
+        
+    }
+ }
+
+ .menu-icon {
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .menu-icon div {
+    width: 25px;
+    height: 2px;
+    background-color: black;
+    margin: 6px 0;
+    transition: 0.4s;
+    border-radius: 5px;
+  }
+  
+  .menu-icon div {
+    background-color: #ffF; /* Cambia el color al hacer hover */
+  }
+

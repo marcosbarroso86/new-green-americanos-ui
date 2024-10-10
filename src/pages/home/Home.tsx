@@ -56,7 +56,7 @@ const Home = () => {
           <div className="container">
             <div className="row d-flex justify-content-center">
               <div
-                className="col-lg-4 col-md-6 d-flex"
+                className="col-lg-4 col-md-6 d-flex member_content"
                 data-aos="fade-up"
                 data-aos-delay="100"
               >

@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.2afdb787.css",
-    "main.js": "/static/js/main.955c1828.js",
-    "static/js/787.a7045463.chunk.js": "/static/js/787.a7045463.chunk.js",
+    "main.css": "/static/css/main.0c6f1607.css",
+    "main.js": "/static/js/main.7b53715c.js",
+    "static/js/787.39b8bb35.chunk.js": "/static/js/787.39b8bb35.chunk.js",
     "static/media/new_green_video_intro.mp4": "/static/media/new_green_video_intro.c13c720c4fced12d2da0.mp4",
     "static/media/JonatanCelestino.jpeg": "/static/media/JonatanCelestino.fff2333066668555ecce.jpeg",
     "static/media/new_green_segundo_fondo.jpeg": "/static/media/new_green_segundo_fondo.4f75515e60dd3392ef88.jpeg",
@@ -34,12 +34,12 @@
     "static/media/homepadel.png": "/static/media/homepadel.ef5205eb0d6f7b2786b3.png",
     "static/media/icono-de-whatsapp.png": "/static/media/icono-de-whatsapp.ec418daacbe94f720aca.png",
     "index.html": "/index.html",
-    "main.2afdb787.css.map": "/static/css/main.2afdb787.css.map",
-    "main.955c1828.js.map": "/static/js/main.955c1828.js.map",
-    "787.a7045463.chunk.js.map": "/static/js/787.a7045463.chunk.js.map"
+    "main.0c6f1607.css.map": "/static/css/main.0c6f1607.css.map",
+    "main.7b53715c.js.map": "/static/js/main.7b53715c.js.map",
+    "787.39b8bb35.chunk.js.map": "/static/js/787.39b8bb35.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2afdb787.css",
-    "static/js/main.955c1828.js"
+    "static/css/main.0c6f1607.css",
+    "static/js/main.7b53715c.js"
   ]
 }

@@ -5,7 +5,7 @@ import new_green_fondo from "../../assets/img/new_green_segundo_fondo.jpeg";
 import marcosbarroso from "../../assets/img/jugadores/marcosbarroso.jpeg";
 import nicolasdiorio from "../../assets/img/jugadores/nicolasdiorio.jpeg";
 import juazcruzcheiro from "../../assets/img/jugadores/juancruzcheiro.jpeg";
-import arielRamos from "../../assets/img/jugadores/ArielRamos.jpeg";
+
 import julioAguilar from "../../assets/img/jugadores/julioAguilar.jpeg";
 import danielMorales from "../../assets/img/jugadores/danielMorales.jpeg";
 import facundoHLinka from "../../assets/img/jugadores/facundoHLinka.jpeg";
@@ -17,11 +17,43 @@ import pabloBarreto from "../../assets/img/jugadores/pabloBarreto.jpeg";
 import sebaskubransky from "../../assets/img/jugadores/sebaskubransky.jpeg";
 import walterBartoli from "../../assets/img/jugadores/walterBartoli.jpeg";
 
+import adrianCaffesse from "../../assets/img/players/Ficha Adrian Caffesse.jpg"
+import adrianOvejero from "../../assets/img/players/Ficha Adrian Ovejero.jpg"
+import adrielDelgado from "../../assets/img/players/Ficha Adriel Delgado.jpg"
+import alcideVallejos from "../../assets/img/players/Ficha Alcides Vallejos.jpg"
+import andresPicca from "../../assets/img/players/Ficha Andres Picca.jpg"
+import angelMoreita from "../../assets/img/players/Ficha Angel Moreira.jpg"
+import arielRamos from "../../assets/img/players/Ficha Ariel ramos.jpg"
+import braianLujan from "../../assets/img/players/Ficha Braian Lujan.jpg"
+import braianPogonza from "../../assets/img/players/Ficha Braian Pogonza.jpg"
+import carlosMoreno from "../../assets/img/players/Ficha Carlos Moreno.jpg"
+import carlosRicce from "../../assets/img/players/Ficha Carlos Ricce.jpg"
+import cristianAguirre from "../../assets/img/players/Ficha Cristian Aguirre.jpg"
+import cristianCandia from "../../assets/img/players/Ficha Cristian Candia.jpg";
 
 import "./styles.css";
-import Member from "../../components/member/Member";
+import CardGrid from "../../components/cardPlayers/cardPlayers";
 
 const Players = () => {
+
+  const players = [
+    { image: adrianCaffesse, name: "Otro jugador", category: "C8"  },
+    { image: adrianOvejero, name: "Otro jugador", category: "C6" },
+    { image: adrielDelgado, name: "Otro jugador", category: "C7" },
+    { image: alcideVallejos, name: "Otro jugador", category: "C6" },
+    { image: andresPicca, name: "Otro jugador", category: "C7" },
+    { image: angelMoreita, name: "Otro jugador", category: "C8" },
+    { image: arielRamos, name: "Otro jugador", category: "C8" },
+    { image: braianLujan, name: "Otro jugador", category: "C7" },
+    { image: braianPogonza, name: "Otro jugador", category: "C6" },
+    { image: carlosMoreno, name: "Otro jugador", category: "C7" },
+    { image: carlosRicce, name: "Otro jugador", category: "C7" },
+    { image: cristianAguirre, name: "Otro jugador", category: "C6" },
+    { image: cristianCandia, name: "Otro jugador", category: "C7" },
+  ];
+  
+
+
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -131,69 +163,10 @@ const Players = () => {
           <h2>Jugadores</h2>
         </div>
 
-        <div className="container">
-          <div className="row">
-            <div className="col-md-4">
-              {/* <Member source={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF_x_aMKuK8XJlRAMxVZ9ElHhtGaFzaf76xS6uSxa4CgrADX7YAMSl6h0Amolm82FNlSg&usqp=CAU"} /> */}
-              <Member source={marcosbarroso} />
-            </div>
-            <div className="col-md-4">
-              <Member source={nicolasdiorio} />
-              {/* <Member source={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShRyPWDxxI9KiES61ih7FbceF-PpZ37UdO2g&s"}/> */}
-            </div>
-            <div className="col-md-4">
-              <Member source={juazcruzcheiro} />
-              {/* <Member source={"https://images.ecestaticos.com/1w_lt4TxqjuV1w1pQ6yrrf9s_ws=/186x0:971x945/624x752/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2Fe02%2Fc78%2Fa00%2Fe02c78a0070f8995d3b48d60ecd486ce.jpg"} /> */}
-            </div>
-          </div>
-          <br />
-          <div className="row">
-          <div className="col-md-4">
-              {/* <Member source={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF_x_aMKuK8XJlRAMxVZ9ElHhtGaFzaf76xS6uSxa4CgrADX7YAMSl6h0Amolm82FNlSg&usqp=CAU"} /> */}
-              <Member source={walterBartoli} />
-            </div>
-            <div className="col-md-4">
-              <Member source={julioAguilar} />
-              {/* <Member source={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShRyPWDxxI9KiES61ih7FbceF-PpZ37UdO2g&s"}/> */}
-            </div>
-            <div className="col-md-4">
-              <Member source={sebaskubransky} />
-              {/* <Member source={"https://images.ecestaticos.com/1w_lt4TxqjuV1w1pQ6yrrf9s_ws=/186x0:971x945/624x752/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2Fe02%2Fc78%2Fa00%2Fe02c78a0070f8995d3b48d60ecd486ce.jpg"} /> */}
-            </div>
-          </div>
-          <br />
+       
+     
+      <CardGrid players={players} />;
 
-          <div className="row">
-          <div className="col-md-4">
-              {/* <Member source={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF_x_aMKuK8XJlRAMxVZ9ElHhtGaFzaf76xS6uSxa4CgrADX7YAMSl6h0Amolm82FNlSg&usqp=CAU"} /> */}
-              <Member source={facundoHLinka} />
-            </div>
-            <div className="col-md-4">
-              <Member source={danielMorales} />
-              {/* <Member source={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShRyPWDxxI9KiES61ih7FbceF-PpZ37UdO2g&s"}/> */}
-            </div>
-            <div className="col-md-4">
-              <Member source={marcosDiaz} />
-              {/* <Member source={"https://images.ecestaticos.com/1w_lt4TxqjuV1w1pQ6yrrf9s_ws=/186x0:971x945/624x752/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2Fe02%2Fc78%2Fa00%2Fe02c78a0070f8995d3b48d60ecd486ce.jpg"} /> */}
-            </div>
-          </div>
-          <br />
-
-          <div className="row">
-          <div className="col-md-4">
-              {/* <Member source={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF_x_aMKuK8XJlRAMxVZ9ElHhtGaFzaf76xS6uSxa4CgrADX7YAMSl6h0Amolm82FNlSg&usqp=CAU"} /> */}
-              <Member source={JonatanCelestino} />
-            </div>
-            <div className="col-md-4">
-              <Member source={gabrielCarrizo} />
-              {/* <Member source={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShRyPWDxxI9KiES61ih7FbceF-PpZ37UdO2g&s"}/> */}
-            </div>
-            <div className="col-md-4">
-              <Member source={pabloBarreto} />
-              {/* <Member source={"https://images.ecestaticos.com/1w_lt4TxqjuV1w1pQ6yrrf9s_ws=/186x0:971x945/624x752/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2Fe02%2Fc78%2Fa00%2Fe02c78a0070f8995d3b48d60ecd486ce.jpg"} /> */}
-            </div>
-          </div>
-        </div>
       </section>
     </div>
   );

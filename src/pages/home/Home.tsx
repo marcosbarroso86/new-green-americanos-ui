@@ -140,9 +140,9 @@ const Home = () => {
                 En esta sección podrán encontrar a todos los jugadores que
                 asisten al circuito de padel de New Green Americanos.
               </p>
-              <div className="cta cta-btn" >
+              <a className="cta cta-btn" href="/jugadores">
                 PROXIMAMENTE
-              </div>
+              </a>
             </div>
           </div>
         </section>

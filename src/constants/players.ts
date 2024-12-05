@@ -1,6 +1,4 @@
-import React from "react";
-import "./styles.css";
-import CardGrid from "../../components/cardPlayers/cardPlayers";
+
 import adrianCaffesse from "../../assets/img/players/Ficha Adrian Caffesse.jpg"
 import adrianOvejero from "../../assets/img/players/Ficha Adrian Ovejero.jpg"
 import adrielDelgado from "../../assets/img/players/Ficha Adriel Delgado.jpg"
@@ -23,7 +21,7 @@ import juanManuelSantucho from "../../assets/img/players/Ficha Juan Manuel Santu
 import julioAguilar from "../../assets/img/players/Ficha Julio Aguilar.jpg";
 import leandroRiartes from "../../assets/img/players/Ficha Leandro Riartes.jpg";
 import lucasCordoba from "../../assets/img/players/Ficha Lucas Cordoba.jpg";
-import lucasCuello from "../../assets/img/players/Ficha Lucas Cuello.jpg";
+import lucasCuello from "../../assets/img/players/Ficha Lucas Cordoba.jpg";
 import lucianoViva from "../../assets/img/players/Ficha Luciano Viva.jpg";
 import marceloYbanez from "../../assets/img/players/Ficha Marcelo Ybañez.jpg";
 import marcosDiaz from "../../assets/img/players/Ficha Marcos Diaz.jpg";
@@ -35,7 +33,7 @@ import pabloBarreto from "../../assets/img/players/Ficha Pablo Barreto.jpg";
 import pabloZubiria from "../../assets/img/players/Ficha Pablo Zubiria.jpg";
 import pauloDominguez from "../../assets/img/players/Ficha Paulo Dominguez.jpg";
 import ricardoSarmentero from "../../assets/img/players/Ficha Ricardo Sarmentero.jpg";
-import robertoBruzzo from "../../assets/img/players/Ficha Roberto Bruzzo.jpg";
+import robertoBruzzo from "../../assets/img/players/Ficha Pablo Zubiria.jpg";
 import rodrigoMolina from "../../assets/img/players/Ficha Rodrigo Molina.jpg";
 import rodrigoVargas from "../../assets/img/players/Ficha Rodrigo Vargas.jpg";
 import santiagoGutierrez from "../../assets/img/players/Ficha Santiago Gutierrez.jpg";
@@ -48,7 +46,7 @@ import valentinEscalante from "../../assets/img/players/Ficha Valentin Escalante
 import walterBartoli from "../../assets/img/players/Ficha Walter Bartoli.jpg";
 import walterVilte from "../../assets/img/players/Ficha Walter Vilte.jpg";
 
- const players = [
+export const players = [
     { image: adrianCaffesse, name: "Adrian Caffesse", category: "C8"  },
     { image: adrianOvejero, name: "Adrian Ovejero", category: "C6" },
     { image: adrielDelgado, name: "Adriel Delgado", category: "C7" },
@@ -96,106 +94,3 @@ import walterVilte from "../../assets/img/players/Ficha Walter Vilte.jpg";
     { image: walterBartoli, name: "Walter Bartoli" ,category: "C7"},
     { image: walterVilte, name: "Walter Vilte" ,category: "C7"},
   ];
-
-
-
-const Players = () => {
-
-  return (
-    <div>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
-        <div className="container px-4 px-lg-5">
-          <a className="navbar-brand" href="#!">
-            Start Bootstrap
-          </a>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-              <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="/">
-                  Home
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#!">
-                  About
-                </a>
-              </li>
-              <li className="nav-item dropdown">
-                <a
-                  className="nav-link dropdown-toggle"
-                  id="navbarDropdown"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Shop
-                </a>
-                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li>
-                    <a className="dropdown-item" href="#!">
-                      All Products
-                    </a>
-                  </li>
-                  <li>
-                    <hr className="dropdown-divider" />
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="#!">
-                      Popular Items
-                    </a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="#!">
-                      New Arrivals
-                    </a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-            <form className="d-flex">
-              <button className="btn btn-outline-dark" type="submit">
-                <i className="bi-cart-fill me-1"></i>
-                Cart
-                <span className="badge bg-dark text-white ms-1 rounded-pill">
-                  0
-                </span>
-              </button>
-            </form>
-          </div>
-        </div>
-      </nav>
-
-      <header className="bg-player bg-black py-5">
-        <div className="container px-4 px-lg-5 my-5">
-          <div className="text-center text-white">
-            <h1 className="display-4 fw-bolder">New green americanos</h1>
-            <p className="lead fw-normal text-white-50 mb-0">
-              Busqueda de jugadores
-            </p>
-          </div>
-        </div>
-      </header>
-     
-      <section className="container" data-aos="fade-up">
-        <div className="section-title">
-          <h2>Jugadores</h2>
-        </div>   
-        <CardGrid players={players} />;
-      </section>
-    </div>
-  );
-};
-
-export default Players;

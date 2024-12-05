@@ -1,3 +1,183 @@
+.button-wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 10px;
+  border-radius: 25px;
+ 
+  width: 75%;
+  margin: 20px auto;
+}
+
+
+.button-group {
+  display: flex;
+  gap: 15px;
+  flex: 3; /* 75% del ancho */
+  justify-content: center;
+}
+
+.small-group {
+  display: flex;
+  gap: 15px;
+  flex: 1; /* 25% del ancho */
+  justify-content: center;
+}
+
+/* Botones redondos */
+.shiny-button, .shiny-button-drive, .shiny-button-reves {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: none;
+  color: inherit;
+  border: 2px solid;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.4s, transform 0.3s;
+}
+
+.shiny-button:hover,
+.shiny-button-drive:hover,
+.shiny-button-reves:hover {
+  transform: scale(1.1);
+}
+
+/* Botón azul */
+.shiny-button {
+  color: #00ffff;
+  border-color: #00ffff;
+}
+
+.shiny-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(0, 255, 255, 0.5), transparent);
+  transition: left 0.4s;
+  border-radius: 50%;
+}
+
+.shiny-button:hover::before {
+  left: 100%;
+}
+
+/* Botón rojo */
+.shiny-button-drive {
+  color: #ff6347;
+  border-color: #ff6347;
+}
+
+.shiny-button-drive::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 99, 71, 0.5), transparent);
+  transition: left 0.4s;
+  border-radius: 50%;
+}
+
+.shiny-button-drive:hover::before {
+  left: 100%;
+}
+
+/* Botón azul oscuro */
+.shiny-button-reves {
+  color: #1e90ff;
+  border-color: #1e90ff;
+}
+
+.shiny-button-reves::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(30, 144, 255, 0.5), transparent);
+  transition: left 0.4s;
+  border-radius: 50%;
+}
+
+.shiny-button-reves:hover::before {
+  left: 100%;
+}
+
+/* Ajuste responsive */
+@media (max-width: 768px) {
+  .button-wrapper {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .button-group,
+  .small-group {
+    justify-content: space-around;
+  }
+
+  .shiny-button,
+  .shiny-button-drive,
+  .shiny-button-reves {
+    width: 60px;
+    height: 60px;
+    font-size: 14px;
+  }
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  background-color: #333; /* Color oscuro del fondo */
+  border-radius: 25px; /* Bordes redondeados */
+  padding: 10px 20px;
+  width: 450px; /* Ancho fijo, ajustable */
+  position: relative;
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  background: none;
+  color: #ccc; /* Color del texto */
+  font-size: 16px;
+  flex-grow: 1;
+  padding-left: 10px;
+}
+
+.search-input::placeholder {
+  color: #ccc; /* Color del placeholder */
+  opacity: 0.8;
+}
+
+.search-icon {
+  color: #ccc; /* Color del icono */
+  font-size: 20px;
+}
+
+.search-container:hover {
+  background-color: #444; /* Cambio de color al hacer hover */
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+  .search-container {
+    width: 100%;
+  }
+}
+
+
 .grid-container {
     display: grid;
     gap: 20px;

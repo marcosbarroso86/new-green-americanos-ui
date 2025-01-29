@@ -47,54 +47,56 @@ import tomasLayes from "../../assets/img/players/Ficha Tomas Layes.jpg";
 import valentinEscalante from "../../assets/img/players/Ficha Valentin Escalante.jpg";
 import walterBartoli from "../../assets/img/players/Ficha Walter Bartoli.jpg";
 import walterVilte from "../../assets/img/players/Ficha Walter Vilte.jpg";
+import { Link } from "react-router-dom";
+import Navbar from "../../components/nav/Nav";
 
  const players = [
-    { image: adrianCaffesse, name: "Adrian Caffesse", category: "C8"  },
-    { image: adrianOvejero, name: "Adrian Ovejero", category: "C6" },
-    { image: adrielDelgado, name: "Adriel Delgado", category: "C7" },
-    { image: alcideVallejos, name: "Alcides Vallejos", category: "C6" },
-    { image: andresPicca, name: "Andres Picca", category: "C7" },
-    { image: angelMoreita, name: "Angel Moreita", category: "C8" },
-    { image: arielRamos, name: "Ariel Ramos", category: "C8" },
-    { image: braianLujan, name: "Braian Lujan", category: "C7" },
-    { image: braianPogonza, name: "Braian Pogonza", category: "C6" },
-    { image: carlosMoreno, name: "Carlos Moreno", category: "C7" },
-    { image: carlosRicce, name: "Carlos Ricce", category: "C7" },
-    { image: cristianAguirre, name: "Cristian Aguirre", category: "C6" },
-    { image: danielMorales, name: "Daniel Morales" ,category: "C8"},
-    { image: javierGuglialmelli, name: "Javier Guglialmelli" ,category: "C6"},
-    { image: joaquinBaum, name: "Joaquin Baum" ,category: "C6"},
-    { image: jonatanCelestino, name: "Jonatan Celestino" ,category: "C5"},
-    { image: joseProfeta, name: "Jose Profeta" ,category: "C7"},
-    { image: juanCruzCheiro, name: "Juan Cruz Cheiro" ,category: "C8"},
-    { image: juanManuelSantucho, name: "Juan Manuel Santucho" ,category: "C7"},
-    { image: julioAguilar, name: "Julio Aguilar" ,category: "C8"},
-    { image: leandroRiartes, name: "Leandro Riartes" ,category: "C6"},
-    { image: lucasCordoba, name: "Lucas Cordoba" ,category: "C7"},
-    { image: lucasCuello, name: "Lucas Cuello" ,category: "C7"},
-    { image: lucianoViva, name: "Luciano Viva" ,category: "C7"},
-    { image: marceloYbanez, name: "Marcelo Ybañez" ,category: "C8"},
-    { image: marcosDiaz, name: "Marcos Diaz" ,category: "C7"},
-    { image: matiasOrtiz, name: "Matias Ortiz" ,category: "C8"},
-    { image: nahuelAmado, name: "Nahuel Amado" ,category: "C7"},
-    { image: nicolasDiorio, name: "Nicolas Diorio" ,category: "C8"},
-    { image: nicolasJofre, name: "Nicolas Jofre" ,category: "C7"},
-    { image: pabloBarreto, name: "Pablo Barreto" ,category: "C7"},
-    { image: pabloZubiria, name: "Pablo Zubiria" ,category: "C7"},
-    { image: pauloDominguez, name: "Paulo Dominguez" ,category: "C8"},
-    { image: ricardoSarmentero, name: "Ricardo Sarmentero" ,category: "C8"},
-    { image: robertoBruzzo, name: "Roberto Bruzzo" ,category: "C7"},
-    { image: rodrigoMolina, name: "Rodrigo Molina" ,category: "C7"},
-    { image: rodrigoVargas, name: "Rodrigo Vargas" ,category: "C8"},
-    { image: santiagoGutierrez, name: "Santiago Gutierrez" ,category: "C6"},
-    { image: sebastianKubransky, name: "Sebastian Kubransky" ,category: "C7"},
-    { image: sebastianVila, name: "Sebastian Vila" ,category: "C6"},
-    { image: sergioBrazao, name: "Sergio Brazao" ,category: "C8"},
-    { image: tomasDominguez, name: "Tomas Dominguez" ,category: "C8"},
-    { image: tomasLayes, name: "Tomas Layes" ,category: "C8"},
-    { image: valentinEscalante, name: "Valentin Escalante" ,category: "C7"},
-    { image: walterBartoli, name: "Walter Bartoli" ,category: "C7"},
-    { image: walterVilte, name: "Walter Vilte" ,category: "C7"},
+    { image: adrianCaffesse, name: "Adrian Caffesse", category: "C8", position: 'REVES'  },
+    { image: adrianOvejero, name: "Adrian Ovejero", category: "C6", position: 'REVES' },
+    { image: adrielDelgado, name: "Adriel Delgado", category: "C7", position: 'REVES' },
+    { image: alcideVallejos, name: "Alcides Vallejos", category: "C6", position: 'DRIVE' },
+    { image: andresPicca, name: "Andres Picca", category: "C7", position: 'DRIVE' },
+    { image: angelMoreita, name: "Angel Moreita", category: "C8", position: 'REVES'  },
+    { image: arielRamos, name: "Ariel Ramos", category: "C8" , position: 'REVES'},
+    { image: braianLujan, name: "Braian Lujan", category: "C7", position: 'DRIVE' },
+    { image: braianPogonza, name: "Braian Pogonza", category: "C6", position: 'DRIVE' },
+    { image: carlosMoreno, name: "Carlos Moreno", category: "C7" , position: 'REVES' },
+    { image: carlosRicce, name: "Carlos Ricce", category: "C7" , position: 'REVES' },
+    { image: cristianAguirre, name: "Cristian Aguirre", category: "C6", position: 'DRIVE' },
+    { image: danielMorales, name: "Daniel Morales" ,category: "C8", position: 'REVES'},
+    { image: javierGuglialmelli, name: "Javier Guglialmelli" ,category: "C6", position: 'DRIVE'},
+    { image: joaquinBaum, name: "Joaquin Baum" ,category: "C6", position: 'REVES'},
+    { image: jonatanCelestino, name: "Jonatan Celestino" ,category: "C5", position: 'REVES'},
+    { image: joseProfeta, name: "Jose Profeta" ,category: "C7", position: 'REVES'},
+    { image: juanCruzCheiro, name: "Juan Cruz Cheiro" ,category: "C8", position: 'DRIVE'},
+    { image: juanManuelSantucho, name: "Juan Manuel Santucho" ,category: "C7", position: 'DRIVE'},
+    { image: julioAguilar, name: "Julio Aguilar" ,category: "C8", position: 'DRIVE'},
+    { image: leandroRiartes, name: "Leandro Riartes" ,category: "C6", position: 'DRIVE'},
+    { image: lucasCordoba, name: "Lucas Cordoba" ,category: "C7", position: 'DRIVE'},
+    { image: lucasCuello, name: "Lucas Cuello" ,category: "C7", position: 'REVES'},
+    { image: lucianoViva, name: "Luciano Viva" ,category: "C7", position: 'DRIVE'},
+    { image: marceloYbanez, name: "Marcelo Ybañez" ,category: "C8", position: 'DRIVE'},
+    { image: marcosDiaz, name: "Marcos Diaz" ,category: "C7", position: 'REVES'},
+    { image: matiasOrtiz, name: "Matias Ortiz" ,category: "C8", position: 'DRIVE'},
+    { image: nahuelAmado, name: "Nahuel Amado" ,category: "C7", position: 'REVES'},
+    { image: nicolasDiorio, name: "Nicolas Diorio" ,category: "C8", position: 'DRIVE'},
+    { image: nicolasJofre, name: "Nicolas Jofre" ,category: "C7", position: 'DRIVE'},
+    { image: pabloBarreto, name: "Pablo Barreto" ,category: "C7", position: 'REVES'},
+    { image: pabloZubiria, name: "Pablo Zubiria" ,category: "C8", position: 'DRIVE'},
+    { image: pauloDominguez, name: "Paulo Dominguez" ,category: "C8", position: 'REVES'},
+    { image: ricardoSarmentero, name: "Ricardo Sarmentero" ,category: "C7", position: 'DRIVE'},
+    { image: robertoBruzzo, name: "Roberto Bruzzo" ,category: "C7", position: 'DRIVE'},
+    { image: rodrigoMolina, name: "Rodrigo Molina" ,category: "C7", position: 'REVES'},
+    { image: rodrigoVargas, name: "Rodrigo Vargas" ,category: "C8", position: 'REVES'},
+    { image: santiagoGutierrez, name: "Santiago Gutierrez" ,category: "C6", position: 'REVES'},
+    { image: sebastianKubransky, name: "Sebastian Kubransky" ,category: "C7", position: 'DRIVE'},
+    { image: sebastianVila, name: "Sebastian Vila" ,category: "C6", position: 'REVES'},
+    { image: sergioBrazao, name: "Sergio Brazao" ,category: "C8", position: 'DRIVE'},
+    { image: tomasDominguez, name: "Tomas Dominguez" ,category: "C8", position: 'DRIVE'},
+    { image: tomasLayes, name: "Tomas Layes" ,category: "C8", position: 'DRIVE'},
+    { image: valentinEscalante, name: "Valentin Escalante" ,category: "C6", position: 'REVES'},
+    { image: walterBartoli, name: "Walter Bartoli" ,category: "C7", position: 'REVES'},
+    { image: walterVilte, name: "Walter Vilte" ,category: "C7", position: 'DRIVE'},
   ];
 
 
@@ -103,92 +105,8 @@ const Players = () => {
 
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
-        <div className="container px-4 px-lg-5">
-          <a className="navbar-brand" href="#!">
-            Start Bootstrap
-          </a>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-              <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="/">
-                  Home
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#!">
-                  About
-                </a>
-              </li>
-              <li className="nav-item dropdown">
-                <a
-                  className="nav-link dropdown-toggle"
-                  id="navbarDropdown"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Shop
-                </a>
-                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li>
-                    <a className="dropdown-item" href="#!">
-                      All Products
-                    </a>
-                  </li>
-                  <li>
-                    <hr className="dropdown-divider" />
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="#!">
-                      Popular Items
-                    </a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="#!">
-                      New Arrivals
-                    </a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-            <form className="d-flex">
-              <button className="btn btn-outline-dark" type="submit">
-                <i className="bi-cart-fill me-1"></i>
-                Cart
-                <span className="badge bg-dark text-white ms-1 rounded-pill">
-                  0
-                </span>
-              </button>
-            </form>
-          </div>
-        </div>
-      </nav>
-
-      <header className="bg-player bg-black py-5">
-        <div className="container px-4 px-lg-5 my-5">
-          <div className="text-center text-white">
-            <h1 className="display-4 fw-bolder">New green americanos</h1>
-            <p className="lead fw-normal text-white-50 mb-0">
-              Busqueda de jugadores
-            </p>
-          </div>
-        </div>
-      </header>
-     
-      <section className="container" data-aos="fade-up">
+      <Navbar toggle={false}/>
+      <section className="container mt-4" data-aos="fade-up">
         <div className="section-title">
           <h2>Jugadores</h2>
         </div>   

@@ -3,13 +3,14 @@ import "./styles.css";
 import newGreenLogoCircle from "../../assets/img/new_green_logo_circle.jpeg";
 import Navbar from "../../components/nav/Nav";
 import Header from "../../components/header/Header";
-
 import pabloCuellarImg from "../../assets/img/team/team-2.png";
 import gustavoImg from "../../assets/img/team/gus9.jpeg";
 import DarkCard from "../../components/darkcard/DarkCard";
 import Sponsor from "../../components/sponsors/Sponsor";
+import { Link } from "react-router-dom";
 
 const Home = () => {
+
   return (
     <div >
       <div id="page-top">
@@ -140,9 +141,11 @@ const Home = () => {
                 En esta sección podrán encontrar a todos los jugadores que
                 asisten al circuito de padel de New Green Americanos.
               </p>
-              <a className="cta cta-btn" href="/jugadores">
+              <Link className="cta cta-btn" to="/jugadores">JUGADORES</Link>
+
+              {/* <button className="cta cta-btn" onClick={ () => navigate('/jugadores') }>
                 PROXIMAMENTE
-              </a>
+              </button> */}
             </div>
           </div>
         </section>
